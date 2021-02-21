@@ -25,6 +25,16 @@ public class Project {
     // Employees that involved in this project.
     private ArrayList<Employee> employees;
 
+    /**
+     * Function calculates the total
+     * cost of the project according
+     * to total hours that were provided
+     * in the constructor. 
+     * 
+     * @return The multiplication of 
+     * total hours to sum of all
+     * involved employee's hourly salaries.
+     */
     private int calculateTotalCost() {
         int totalHourlySalary = 0;
 
@@ -35,6 +45,14 @@ public class Project {
         return totalHourlySalary * this.totalHour;
     }
 
+    /**
+     * Function is used to set project id 
+     * after the new record was inserted 
+     * in the table.
+     * 
+     * @param id – new, auto-generated 
+     * identificator of the project.
+     */
     public void setID(int id) {
         this.id = id;
     }

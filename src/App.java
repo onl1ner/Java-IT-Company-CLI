@@ -196,7 +196,7 @@ public class App {
             }
         }
         
-        Project proj = new Project(name, totalHour, employees);
+        Project proj = new Project(name, totalHour, empForProj);
         projects.add(proj);
 
         System.out.println("Successfuly created project: " + proj.getName());

@@ -124,9 +124,9 @@ public class NetworkService implements INetworkService {
             Class.forName("org.postgresql.Driver");
 
             // Instead of DB name, user and password write
-            // password of an existing database with the
+            // credentials of an existing database with the
             // tables: employee, project, emp_to_proj.
-            this.conn = DriverManager.getConnection("jdbc:postgresql:Assignment-5", "JavaUser", "test1");
+            this.conn = DriverManager.getConnection("CHANGE_ME", "CHANGE_ME", "CHANGE_ME");
             this.statement = this.conn.createStatement();
         } catch (Exception error) {
             System.out.println(error);
